@@ -1,0 +1,53 @@
+---
+title: "Paper Title"
+author:
+- familyname: Priyanga Dilini
+  othernames: Talagala
+  address: xxx
+  email: pritalagala@gmail.com
+  correspondingauthor: true
+- familyname: Thiyanga
+  othernames: Talagala
+  address: yyy
+abstract: "A brief summary of out work"
+keywords: "rmarkdown, templates"
+wpnumber: no/yr
+jelcodes: C10,C14,C22
+blind: false
+cover: true
+toc: false
+bibliography: references.bib
+biblio-style: authoryear-comp
+output:
+  templatehub::workingpaper:
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    number_sections: yes
+    citation_package: biblatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+# Make sure you have the latest version of rmarkdown and bookdown
+#devtools::install_github("rstudio/rmarkdown")
+#devtools::install_github("rstudio/bookdown")
+library(ggplot2)
+```
+
+
+# Introduction
+
+R Markdown [@xie2018r] documents are fully reproducible and support dozens of static and dynamic output formats.
+
+```{r histogram, fig.cap="Nice histogram", message=FALSE, warning=FALSE}
+hist(exp(rnorm(200)))
+```
+
+Consider Figure \ref{fig:histogram}.
+
+## Literature Review
+
