@@ -9,7 +9,7 @@ author:
 - familyname: Thiyanga
   othernames: Talagala
   address: yyy
-abstract: "A brief summary of out work"
+abstract: "A brief summary of our work"
 keywords: "rmarkdown, templates"
 wpnumber: no/yr
 jelcodes: C10,C14,C22
@@ -49,5 +49,9 @@ hist(exp(rnorm(200)))
 
 Consider Figure \ref{fig:histogram}.
 
-## Literature Review
+# Literature Review
+
+# Acknowledgements {-}
+
+This Rmarkdown working paper template was adapted from Professor Rob J Hyndman's MonashEBSTemplates [https://github.com/robjhyndman/MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates).
 
